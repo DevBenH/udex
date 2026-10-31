@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Udex Support</title>
+<meta name="description" content="Help with Udex, the UV index widget and sun session timer.">
+<link rel="icon" href="sun.svg">
+<style>
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/InstrumentSans_400Regular.ttf"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Instrument Sans"; src: url("fonts/InstrumentSans_600SemiBold.ttf"); font-weight: 600; font-display: swap; }
+  @font-face { font-family: "Instrument Serif"; src: url("fonts/InstrumentSerif_400Regular_Italic.ttf"); font-style: italic; font-display: swap; }
+
+  :root {
+    color-scheme: light;
+    --ink: #131210;
+    --soft: rgba(19, 18, 16, 0.68);
+    --line: rgba(19, 18, 16, 0.4);
+    --bone: #F7F4EE;
+    --paper: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bone);
+    color: var(--ink);
+    font: 400 17px/1.55 "Instrument Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  header {
+    padding: 56px 16px 48px;
+    text-align: center;
+    background:
+      radial-gradient(70% 90% at 0% 0%, #BFE0E6 0%, transparent 70%),
+      radial-gradient(70% 90% at 100% 40%, #F8D59A 0%, transparent 70%),
+      radial-gradient(80% 90% at 30% 100%, #E9C4CF 0%, transparent 70%),
+      #F7EDE2;
+  }
+
+  header img { display: block; margin: 0 auto 12px; }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(44px, 12vw, 64px);
+    line-height: 1.08;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+  }
+
+  h1 em {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  header p { margin: 12px 0 0; }
+  .date { color: var(--soft); font-size: 15px; }
+
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 24px; }
+
+  section { margin-top: 44px; }
+  section:first-child { margin-top: 0; }
+
+  h2 { margin: 0 0 10px; font-size: 26px; line-height: 1.2; font-weight: 600; letter-spacing: -0.02em; }
+  h3 { margin: 0 0 8px; font-size: 19px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em; }
+
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: inherit; text-underline-offset: 2px; overflow-wrap: anywhere; }
+
+  .short { padding: 20px; border-radius: 24px; background: var(--paper); }
+  .short ul { margin-bottom: 0; }
+
+  .service {
+    margin-top: 12px;
+    padding: 18px 20px;
+    border: 1.5px dashed var(--line);
+    border-radius: 24px;
+  }
+
+  dl { margin: 0; }
+  dt { color: var(--soft); font-size: 15px; }
+  dd { margin: 0 0 10px; }
+  dd:last-child { margin-bottom: 0; }
+
+  footer { max-width: 680px; margin: 0 auto; padding: 8px 16px 48px; color: var(--soft); font-size: 15px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="sun.svg" alt="" width="132" height="132">
+  <h1>Udex <em>support</em></h1>
+  <p>Help with the UV index widget and sun session timer.</p>
+</header>
+
+<main>
+  <section class="short">
+    <h2>Get in touch</h2>
+    <p>Email <a href="mailto:hben18711@gmail.com">hben18711@gmail.com</a> and we'll reply as soon as we can. If it's about a subscription, include the order ID from your Apple receipt.</p>
+  </section>
+
+  <section>
+    <h2>Add the widget</h2>
+    <p>Touch and hold your Home Screen, tap Edit, then Add Widget, and search for Udex. To change its design, open Udex and go to Settings, then Widget styles.</p>
+    <p>Open Udex at least once first, so the widget knows where to show the UV for.</p>
+  </section>
+
+  <section>
+    <h2>Why does the UV differ from another app?</h2>
+    <p>Every UV figure is a forecast, and services use different models. Udex shows Apple Weather's figure, and plans sessions on a more cautious one, because cloud can clear without warning. Altitude and shade also change the real UV where you are.</p>
+  </section>
+
+  <section>
+    <h2>Change your place</h2>
+    <p>Tap the settings button on Today, then Place, and search for anywhere. Udex stays on that place until you choose Use my location.</p>
+  </section>
+
+  <section>
+    <h2>Cancel or restore a subscription</h2>
+    <p>To cancel, open the Settings app on your iPhone, tap your name, then Subscriptions. Cancel at least 24 hours before it renews.</p>
+    <p>To restore Udex Pro on a new phone or after reinstalling, open Udex, go to Settings, tap Udex Pro, then Restore purchase.</p>
+  </section>
+
+  <section>
+    <h2>Moving to a new phone</h2>
+    <p>Your skin type and sessions stay out of iCloud backups, so they won't move across. You'll answer the setup questions again, and can restore your subscription as above.</p>
+  </section>
+
+  <section>
+    <h2>A word on safety</h2>
+    <p>Udex estimates your UV dose and is not medical advice. It does not make tanning safe: a tan is a sign of skin damage. Limits reduce the risk of sunburn but can't rule it out, so stop sooner if your skin feels warm or sore or looks pink, and see a doctor about any mole that changes.</p>
+  </section>
+
+  <section>
+    <h2>More</h2>
+    <p><a href="privacy.html">Privacy policy</a></p>
+  </section>
+</main>
+
+<footer>This page sets no cookies and loads nothing from other websites.</footer>
+</body>
+</html>
